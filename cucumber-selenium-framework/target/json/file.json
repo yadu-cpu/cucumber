@@ -1,0 +1,103 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-16T15:01:57.741Z",
+        "line": 4,
+        "name": "User is able to Open the browser, navigate to the URL and Search for Product",
+        "description": "",
+        "id": "e-commerce-project-web-site-health-check;user-is-able-to-open-the-browser--navigate-to-the-url-and-search-for-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 49210814700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opened browser",
+            "match": {
+              "location": "stepdefs.StepDefs.user_opened_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13435768500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigated to the home application url",
+            "match": {
+              "location": "stepdefs.StepDefs.user_navigated_to_the_home_application_url()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24276388600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Search for product \"Laptop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptop\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefs.StepDefs.user_search_for_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88005100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Search Result page is displayed",
+            "match": {
+              "location": "stepdefs.StepDefs.search_result_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@healthcheck"
+          }
+        ]
+      }
+    ],
+    "name": "E-commerce Project Web Site Health Check",
+    "description": "",
+    "id": "e-commerce-project-web-site-health-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/HealthCheck.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@healthcheck",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 5
+        }
+      }
+    ]
+  }
+]
